@@ -76,7 +76,7 @@ model-viewer {
   .containerCAPA{  
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/img/bg-atuacao.png);
+    background-image: url(../assets/img/bg-capa.png);
     background-repeat: no-repeat;
     background-size: 130vh;  
     background-position: -30vh -8vh;  
@@ -107,7 +107,7 @@ model-viewer {
   .containerCAPA{  
     width: 100%;
     height: 100vh;
-    background-image: url(../assets/img/bg-atuacao.png);    
+    background-image: url(../assets/img/bg-capa.png);    
     background-repeat: no-repeat;
     background-size: 150vh;  
     background-position: -200px -10vh;
