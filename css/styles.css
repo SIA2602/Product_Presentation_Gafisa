@@ -43,12 +43,13 @@
 
 h1{
   font-family: 'Rajdhani';
-  font-style: normal;  
+  font-style: normal;    
 }
 
 h2{
   font-family: 'Rajdhani';
   font-style: normal;  
+  text-align: right !important;
 }
 
 #card {  
@@ -98,7 +99,11 @@ model-viewer {
   }
 
   .marginScreen{
-    margin-top: 260px;
+    margin-top: 150px;
+  }
+
+  .marginCard{
+    margin-top: 150px;
   }
 }
 
@@ -129,6 +134,11 @@ model-viewer {
   }
 
   .marginScreen{
-    margin-top: 50px;
+    margin-top: 10vh;
+    padding-left: 12vw;
+  }
+
+  .marginCard{
+    margin-top: 150px;
   }
 }
