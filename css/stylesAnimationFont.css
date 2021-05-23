@@ -1,0 +1,41 @@
+/* fonte: https://www.cupcom.com.br/programacao/15-efeitos-de-digitacao-de-texto-com-css.html*/
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+h2{
+    font-family: 'Rajdhani';
+    font-style: normal;  
+    text-align: right !important;
+  }
+
+.container h2 {        
+    margin-top: 10px;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container h2 span.typed-text {
+    font-weight: bold;
+    color: rgb(128, 0, 59);
+}
+
+.container h2 span.cursor {
+    display: inline-block;
+    background-color: #6c757d;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+.container h2 span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color: #6c757d; }
+    49% { background-color: #6c757d; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #6c757d; }
+}
