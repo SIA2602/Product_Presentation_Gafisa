@@ -85,6 +85,11 @@ model-viewer {
   --poster-color: transparent; 
 }
 
+.positionButton{
+  position: relative;
+  align-items: right !important;
+}
+
 /*Screen Mobile*/
 @media (max-width: 770px) {
   .containerCAPA{  
@@ -116,7 +121,7 @@ model-viewer {
   }
 
   .marginCard{
-    padding-top: 0px;
+    padding-top: 100px;
   }
 
   .sizeCard{
@@ -131,6 +136,11 @@ model-viewer {
   .descricao{
     visibility: hidden; 
   }
+
+  .qrCode{
+    display: none;
+    visibility: hidden;
+  }  
 }
 
 /*Screen Desktop*/
@@ -172,4 +182,9 @@ model-viewer {
     width: 25rem; 
     margin-right: 20px;
   }
+
+  .buttonAR{
+    display: none;
+    visibility: hidden;
+  }  
 }
