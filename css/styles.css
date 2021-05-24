@@ -46,10 +46,23 @@ h1{
   font-style: normal;    
 }
 
+h3{
+  font-family: 'Rajdhani';
+  font-style: normal;  
+  color: var(--secondary);  
+}
+
 h2{
   font-family: 'Rajdhani';
   font-style: normal;  
-  text-align: right !important;
+  text-align: right !important;  
+}
+
+h4{
+  font-family: 'Rajdhani';
+  font-style: normal;  
+  text-align: left !important;
+  font-size: 30px;
 }
 
 h5,h6{
@@ -64,6 +77,11 @@ b{
 
 body{
   background-color: rgba(232, 232, 232);
+}
+
+li{
+  font-weight: bold;
+  color: rgb(128, 0, 59);
 }
 
 #card {  
@@ -101,6 +119,16 @@ model-viewer {
     background-position: -30vh -8vh;  
     background-color: rgba(232, 232, 232); 
   }
+
+  .containerExplicacao{  
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/img/bg-topo.png);    
+    background-repeat: no-repeat;     
+    background-color: rgba(232, 232, 232);        
+    background-position: right;
+    background-size: 8vh;
+  }  
 
   .containerPRODUTOS{
     width: 100%;
@@ -141,6 +169,11 @@ model-viewer {
     display: none;
     visibility: hidden;
   }  
+
+  .cellPhone{
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /*Screen Desktop*/
@@ -154,6 +187,16 @@ model-viewer {
     background-size: 150vh;  
     background-position: -200px -10vh;
     background-color: rgba(232, 232, 232);   
+  }  
+
+  .containerExplicacao{  
+    width: 100%;
+    height: 80vh;
+    background-image: url(../assets/img/bg-topo.png);    
+    background-repeat: no-repeat;     
+    background-color: rgba(232, 232, 232);         
+    background-position: right;
+    background-size: 8vh;
   }  
 
   .containerPRODUTOS{
@@ -175,7 +218,7 @@ model-viewer {
   }
 
   .marginCard{
-    padding-top: 150px;
+    padding-top: 50px;
   }
 
   .sizeCard{
@@ -187,4 +230,9 @@ model-viewer {
     display: none;
     visibility: hidden;
   }  
+
+  .cellPhoneMobile{
+    display: none;
+    visibility: hidden;
+  }
 }
