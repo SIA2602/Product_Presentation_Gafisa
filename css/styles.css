@@ -58,13 +58,6 @@ h2{
   text-align: right !important;  
 }
 
-h4{
-  font-family: 'Rajdhani';
-  font-style: normal;  
-  text-align: left !important;
-  font-size: 30px;
-}
-
 h5,h6{
   font-family: 'Rajdhani';
   font-style: normal;   
@@ -116,7 +109,7 @@ model-viewer {
     background-image: url(../assets/img/bg-capa-02.png);
     background-repeat: no-repeat;
     background-size: 130vh;  
-    background-position: -30vh -8vh;  
+    background-position: -30vh -5vh;  
     background-color: rgba(232, 232, 232); 
   }
 
@@ -149,7 +142,7 @@ model-viewer {
   }
 
   .marginCard{
-    padding-top: 100px;
+    margin-top: -25vh;
   }
 
   .sizeCard{
@@ -173,6 +166,13 @@ model-viewer {
   .cellPhone{
     display: none;
     visibility: hidden;
+  }
+
+  h4{
+    font-family: 'Rajdhani';
+    font-style: normal;  
+    text-align: left !important;
+    font-size: 20px;
   }
 }
 
@@ -234,5 +234,12 @@ model-viewer {
   .cellPhoneMobile{
     display: none;
     visibility: hidden;
+  }
+
+  h4{
+    font-family: 'Rajdhani';
+    font-style: normal;  
+    text-align: left !important;
+    font-size: 30px;
   }
 }
