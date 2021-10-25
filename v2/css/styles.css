@@ -1,0 +1,75 @@
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto';
+  font-style: normal;  
+}
+
+body{
+  background-color: #1D3745;
+}
+
+.barra_superior {
+  width: auto;
+  height: 15vh;
+  background-color: #BB7A62;
+}
+
+.background_image {
+  width: auto;
+  height: 70vh;
+  background-image: url("../assets/img/img04.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+}
+
+.home_page {
+  width: auto;
+  height: 170vh;
+}
+
+.triangulo {
+  width: 0; 
+  height: 0; 
+  border-top: 25vh solid transparent;
+  border-bottom: 25vh solid transparent;
+  border-left: 15vw solid #F0E5E0;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 576px), (max-width: 768px) {
+  .triangulo {    
+    border-top: 20vh solid transparent;
+    border-bottom: 20vh solid transparent;
+    border-left: 40vw solid #F0E5E0;   
+  }
+  
+  .background_image {   
+    height: 60vh;    
+  }
+}
+
+@media (min-width: 1024px) {
+  .triangulo {    
+    border-top: 25vh solid transparent;
+    border-bottom: 25vh solid transparent;
+    border-left: 35vw solid #F0E5E0;   
+  } 
+  
+  .background_image {   
+    height: 60vh;    
+  }
+}
+
+@media (min-width: 1200px) {
+  .triangulo {    
+    border-top: 25vh solid transparent;
+    border-bottom: 25vh solid transparent;
+    border-left: 15vw solid #F0E5E0;   
+  }  
+
+  .background_image {   
+    height: 70vh;    
+  }
+}
