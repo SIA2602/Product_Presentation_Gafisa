@@ -2,6 +2,11 @@
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto';
   font-style: normal;  
+  padding: 5px;
+}
+
+h5 {
+  font-size: large;
 }
 
 body{
@@ -23,9 +28,9 @@ body{
   background-position: center;  
 }
 
-.home_page {
+.page-cards {
   width: auto;
-  height: 170vh;
+  height: 90vh;  
 }
 
 .triangulo {
@@ -36,6 +41,18 @@ body{
   border-left: 15vw solid #F0E5E0;
   position: absolute;
   left: 0;
+  top: 45vh;  
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card {
+  background-color: #F0E5E0;
 }
 
 @media (min-width: 576px), (max-width: 768px) {
@@ -47,6 +64,34 @@ body{
   
   .background_image {   
     height: 60vh;    
+  }
+
+  .triangulo {
+    top: 40vh;
+  }
+
+  .card {
+    width: 70vw;    
+  }
+
+  .img-qr-code {
+    width: 30vw;
+  }
+
+  .page-cards {   
+    margin-top: 15vh;
+  }
+
+  h5 {
+    font-size: medium;
+  }
+
+  h6 {
+    font-size: small;
+  }
+
+  .desktop-option {
+    display: none;
   }
 }
 
@@ -60,6 +105,34 @@ body{
   .background_image {   
     height: 60vh;    
   }
+
+  .triangulo {
+    top: 35vh;
+  }
+
+  .card {
+    width: 50vw;    
+  }
+
+  .page-cards {   
+    margin-top: 10vh;
+  }
+
+  .img-qr-code {
+    width: 30vw;
+  }
+
+  h5 {
+    font-size: xx-large;
+  }
+
+  h6 {
+    font-size: x-large;
+  }
+
+  .desktop-option {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -71,5 +144,33 @@ body{
 
   .background_image {   
     height: 70vh;    
+  }
+
+  .triangulo {
+    top: 45vh;
+  }
+
+  .card {
+    width: 23vw;    
+  }
+
+  .img-qr-code {
+    width: 10vw;
+  }
+
+  .page-cards {   
+    margin-top: 5vh;
+  }
+
+  h5 {
+    font-size: medium;
+  }
+
+  h6 {
+    font-size: small;
+  }
+
+  .desktop-option {
+    display: block;
   }
 }
