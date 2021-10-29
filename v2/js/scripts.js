@@ -1,6 +1,6 @@
 var image = "img01.jpg";
 var increment_image = 1;
-const increment = 15;
+const increment = 10;
 var blur = increment;
 
 function setImage() {    
@@ -24,4 +24,4 @@ async function setBlur(){
     }    
 }
 
-setInterval(setBlur, 80);
+setInterval(setBlur, 100);

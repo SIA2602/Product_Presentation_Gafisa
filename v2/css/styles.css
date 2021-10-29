@@ -5,12 +5,18 @@ h1,h2,h3,h4,h5,h6 {
   padding: 5px;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
 h5 {
   font-size: large;
 }
 
 body{
   background-color: #1D3745;
+  margin: 0;
+  padding: 0;
 }
 
 .barra_superior {
@@ -24,6 +30,7 @@ body{
   width: auto;
   height: 70vh;   
   display: flex;  
+  background-color: #F0E5E0;
 }
 
 .background_image {
@@ -41,7 +48,7 @@ body{
 
 .page-cards {
   width: auto;
-  height: 90vh;  
+  height: auto;  
 }
 
 .triangulo {
@@ -104,7 +111,7 @@ body{
 
   .desktop-option {
     display: none;
-  }
+  }  
 }
 
 @media (min-width: 1024px) {
@@ -145,7 +152,7 @@ body{
 
   .desktop-option {
     display: none;
-  }
+  } 
 }
 
 @media (min-width: 1200px) {
@@ -186,5 +193,5 @@ body{
 
   .desktop-option {
     display: block;
-  }
+  } 
 }
