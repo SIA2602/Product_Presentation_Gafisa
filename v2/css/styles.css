@@ -1,8 +1,19 @@
 
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+  color: #1D3745;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto';
   font-style: normal;  
   padding: 5px;
+}
+
+h2 {
+  color: #1D3745;
+  cursor: pointer;
 }
 
 .m-0 {
@@ -19,15 +30,20 @@ body{
   padding: 0;
 }
 
-.barra_superior {
-  width: auto;
-  height: 15vh;
-  background-color: #BB7A62;
-  z-index: 10;
+.my-bottom {
+  background-color: white;
+  max-width: 80%;
+  border-radius: 30px;
+  border: 1px solid #1D3745; 
 }
 
-.background {
-  width: auto;
+.barra_superior {
+  width: 100%;
+  height: 15vh;
+  background-color: #BB7A62;  
+}
+
+.background {  
   height: 70vh;   
   display: flex;  
   background-color: #F0E5E0;
@@ -49,6 +65,7 @@ body{
 .page-cards {
   width: auto;
   height: auto;  
+  background-color: #1D3745;
 }
 
 .triangulo {
@@ -60,17 +77,32 @@ body{
   position: absolute;
   left: 0;
   top: 45vh;  
+  z-index: 1;
+}
+
+.text-area {
+  height: 50vh;
+  width: 15vw;
+  position: absolute;
+  left: 0;
+  top: 45vh;  
+  z-index: 100;
+  display: flex;
+  align-items: center;  
 }
 
 .col {
-  display: flex;
-  justify-content: center;
+  display: flex;  
   align-items: center;
-  margin: 20px;
+  padding: 20px 5vw 20px 5vw;
 }
 
 .card {
   background-color: #F0E5E0;
+}
+
+.modal-open {
+  padding: 0px !important;
 }
 
 @media (min-width: 576px), (max-width: 768px) {
@@ -79,15 +111,20 @@ body{
     border-bottom: 20vh solid transparent;
     border-left: 40vw solid #F0E5E0;   
   }
+
+  .text-area {
+    height: 40vh;
+    width: 35vw;
+  }
   
   .background_image, .background {   
     height: 60vh;
     clip: rect(0px, 100vw, 60vh, 0px);    
   }
 
-  .triangulo {
+  .triangulo, .text-area {
     top: 40vh;
-  }
+  } 
 
   .card {
     width: 70vw;    
@@ -101,6 +138,18 @@ body{
     margin-top: 15vh;
   }
 
+  h2 {
+    font-size: medium;
+  }
+
+  h3 {
+    font-size: medium;
+  }
+
+  h4 {
+    font-size: large;
+  }
+
   h5 {
     font-size: medium;
   }
@@ -112,6 +161,18 @@ body{
   .desktop-option {
     display: none;
   }  
+
+  .in-left, .in-right {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+
+  h2, h3, h5, h6 {
+    font-size: x-large;
+  } 
+
 }
 
 @media (min-width: 1024px) {
@@ -120,26 +181,43 @@ body{
     border-bottom: 25vh solid transparent;
     border-left: 35vw solid #F0E5E0;   
   } 
+
+  .text-area {
+    height: 50vh;
+    width: 28vw;
+  }
   
   .background_image, .background {   
     height: 60vh;    
     clip: rect(0px, 100vw, 60vh, 0px);
   }
 
-  .triangulo {
+  .triangulo, .text-area {
     top: 35vh;
   }
 
   .card {
     width: 50vw;    
   }
-
+ 
   .page-cards {   
     margin-top: 10vh;
   }
 
   .img-qr-code {
     width: 30vw;
+  }
+
+  h2 {
+    font-size: xx-large;
+  }
+
+  h3 {
+    font-size: xx-large;
+  }
+
+  h4 {
+    font-size: large;
   }
 
   h5 {
@@ -153,26 +231,40 @@ body{
   .desktop-option {
     display: none;
   } 
+
+  .in-left, .in-right {
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1200px) {
+  
   .triangulo {    
     border-top: 25vh solid transparent;
     border-bottom: 25vh solid transparent;
     border-left: 15vw solid #F0E5E0;   
   }  
 
+  .text-area {
+    height: 50vh;
+    width: 10vw;
+  }
+
   .background_image, .background {   
     height: 70vh;    
     clip: rect(0px, 100vw, 70vh, 0px);
   }
 
-  .triangulo {
+  .triangulo, .text-area {
     top: 45vh;
   }
 
   .card {
     width: 23vw;    
+  }
+
+  .my-bottom {    
+    display: none;    
   }
 
   .img-qr-code {
@@ -181,6 +273,18 @@ body{
 
   .page-cards {   
     margin-top: 5vh;
+  }
+
+  h2 {
+    font-size: large;
+  }
+  
+  h3 {
+    font-size: xx-large;
+  }
+
+  h4 {
+    font-size: large;
   }
 
   h5 {
@@ -194,4 +298,12 @@ body{
   .desktop-option {
     display: block;
   } 
+
+  .in-left {
+    justify-content: left;
+  }
+
+  .in-right {
+    justify-content: right;
+  }
 }
