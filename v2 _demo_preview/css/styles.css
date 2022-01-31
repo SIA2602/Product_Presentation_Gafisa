@@ -12,7 +12,7 @@ body, h1,h2,h3,h4,h5,h6 {
 }
 
 h2 {
-  color: #1D3745;
+  color: #fcf8eb;
   cursor: pointer;
 }
 
@@ -53,7 +53,7 @@ h5 {
 }
 
 body{
-  background-color: #1D3745;
+  background-color: #ddbf71;
   margin: 0;
   padding: 0;
 }
@@ -68,7 +68,7 @@ body{
 .barra_superior {
   width: 100%;
   height: 15vh;
-  background-color: #BB7A62;  
+  background-color: #fcf8eb;  
 }
 
 .background {  
@@ -93,7 +93,7 @@ body{
 .page-cards {
   width: auto;
   height: auto;  
-  background-color: #1D3745;
+  background-color: #ddbf71;
 }
 
 .triangulo {
@@ -101,7 +101,7 @@ body{
   height: 0; 
   border-top: 25vh solid transparent;
   border-bottom: 25vh solid transparent;
-  border-left: 15vw solid #F0E5E0;
+  border-left: 15vw solid #74934d;
   position: absolute;
   left: 0;
   top: 45vh;  
@@ -126,7 +126,7 @@ body{
 }
 
 .card {
-  background-color: #F0E5E0;
+  background-color: #fcf8eb;
 }
 
 .modal-open {
@@ -137,7 +137,7 @@ body{
   .triangulo {    
     border-top: 20vh solid transparent;
     border-bottom: 20vh solid transparent;
-    border-left: 40vw solid #F0E5E0;   
+    border-left: 40vw solid #74934d;   
   }
 
   .text-area {
@@ -207,7 +207,7 @@ body{
   .triangulo {    
     border-top: 25vh solid transparent;
     border-bottom: 25vh solid transparent;
-    border-left: 35vw solid #F0E5E0;   
+    border-left: 35vw solid #74934d;   
   } 
 
   .text-area {
@@ -270,7 +270,7 @@ body{
   .triangulo {    
     border-top: 25vh solid transparent;
     border-bottom: 25vh solid transparent;
-    border-left: 15vw solid #F0E5E0;   
+    border-left: 15vw solid #74934d;   
   }  
 
   .text-area {
@@ -288,7 +288,7 @@ body{
   }
 
   .card {
-    width: 20vw;    
+    width: 18vw;    
   }
 
   .my-bottom {    
@@ -328,10 +328,10 @@ body{
   } 
 
   .in-left {
-    justify-content: left;
+    justify-content: left;    
   }
 
   .in-right {
-    justify-content: right;
+    justify-content: right;    
   }
 }
